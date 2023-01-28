@@ -7,17 +7,17 @@ function findValue(array, value) {
     while (min <= max) {
         guess = Math.floor((min + max) / 2);
         if (array[guess] === value) {
-        //   return guess;
-        console.log(guess);
+            //   return guess;
+            console.log(guess);
         }
         if (array[guess] < value) {
-        min = guess + 1;
+            min = guess + 1;
         } else {
-        max = guess - 1;
+            max = guess - 1;
         }
     }
     return -1;
     // console.log(-1);
 }
 
-findValue([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10);
+findValue([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 7);
