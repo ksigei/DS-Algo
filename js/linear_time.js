@@ -1,3 +1,5 @@
+// O(n) - Linear time:
+
 function findValue(array, value) {
   for (var i = 0; i < array.length; i++) {
     if (array[i] === value) {
